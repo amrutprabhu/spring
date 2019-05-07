@@ -26,4 +26,11 @@ public class Customer {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private List<Telephone> telephone;
 
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    @JoinTable(name = "customer_course",
+                joinColumns = @JoinColumn(name = "customerId"),
+                inverseJoinColumns = @JoinColumn(name = "courseId"))
+    private List<Course> courses;
+
+
 }
