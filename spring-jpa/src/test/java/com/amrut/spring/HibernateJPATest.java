@@ -9,9 +9,6 @@ import com.amrut.spring.spring.repository.AddressRepository;
 import com.amrut.spring.spring.repository.CourseRepository;
 import com.amrut.spring.spring.repository.CustomerRepository;
 import com.amrut.spring.spring.repository.TelephoneRepository;
-import org.h2.tools.Server;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +17,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.transaction.Transactional;
-import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
